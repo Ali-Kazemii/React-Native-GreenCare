@@ -104,13 +104,6 @@ src/
 
 ### Architecture Overview
 
-```
-Presentation  -->  Domain  <--  Data
-(screens,         (entities,     (repositories,
- components,       usecases,      mock data)
- navigation)       interfaces)
-```
-
 - **Domain** layer defines entities and repository interfaces with no external dependencies
 - **Data** layer implements repositories with mock data (swappable with real APIs)
 - **Presentation** layer consumes use cases and renders UI
